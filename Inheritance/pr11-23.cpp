@@ -40,7 +40,8 @@ int main()
 
 	str = static_cast<Student*>(pr);
 
-	cout << str->getAdvisor();
+	const Person* advisor1 = str->getAdvisor();
+	cout << advisor1->getName();
 
     return 0;
 }
